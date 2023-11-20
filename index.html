@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Student Registration</h1>
+            <div class="logo">
+                <img src="./images/registration-form.png" alt="registration logo" width="120">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wrapper">
+            <div class="form">
+                <fieldset>
+                    <legend>Registration</legend>
+                    <form action="/" method="post">
+                        <label for="name">Student Full Name</label>
+                        <input type="text" name="sname" id="name" placeholder="e.g. Mr./Mrs. Jone Deo" required
+                            autofocus="true">
+
+                        <label for="email">Student Email</label>
+                        <input type="email" name="semail" id="email" placeholder="e.g. abc@gmail.com" required>
+                        <label for="phoneNumber">Student Mobile</label>
+                        <input type="tel" name="phone" id="phoneNumber" placeholder="e.g. +91 4586852378" required>
+                        <label for="inst">University/College Name </label>
+                        <input type="text" name="inst" id="inst" placeholder="e.g. Vidyasagar University" required>
+
+                        <label for="year">Current Year </label>
+                        <input type="date" name="year" id="year">
+                        <label>Gender: </label>
+                        <label for="male">
+                            Male <input type="radio" name="gender" id="male">
+                        </label>
+                        <label for="female">
+                            Female <input type="radio" name="gender" id="female">
+                        </label>
+                        <label for="others">
+                            Others
+                            <input type="radio" name="gender" id="others">
+                        </label>
+                        <br>
+                        <label for="degree">Degree : </label>
+                        <select name="degree" id="degree">
+                            <option value="select degree" selected>select degree</option>
+                            <option value="MCA">MCA</option>
+                            <option value="M.SC">M.SC</option>
+                            <option value="BCA">BCA</option>
+                            <option value="Math">Math</option>
+                            <option value="Zoology">Zoology</option>
+                        </select>
+                        <label for="course">Course-Level : </label>
+                        <select name="course" id="course">
+                            <option value="select course" selected>select course</option>
+                            <option value="MCA">UG</option>
+                            <option value="M.SC">PG</option>
+                            <option value="BCA">PHD</option>
+                        </select>
+                        <br>
+                        <input type="checkbox" name="chkbox" id="privacy">
+                        I agree that all the above deails are true,if any false information is given the form will be
+                        reject.
+                        <br>
+                        <br>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="clear form">
+                    </form>
+                </fieldset>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
